@@ -22,19 +22,18 @@ def version(filename):
 
 requires = ['requests']
 
-setup(name='totango',
+setup(name='totango-divvy',
       version=version(os.path.join('totango', '__init__.py')),
-      description='Totango Python Library',
+      description='Totango Python Library for DivvyHQ',
       long_description='%s\n%s' % (read('README.rst'), re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))),
-      author='German Bourdin',
-      author_email='admin@gbourdin.com',
-      url='http://github.com/gbourdin/totango-python',
+      author='DivvyHQ',
+      author_email='contact@divvyhq.com',
+      url='http://github.com/DivvyHQ/totango-python',
       license='Apache 2.0',
       packages=find_packages(),
       zip_safe=False,
       classifiers=[
           # complete classifier list: http://pypi.python.org/pypi?%3Aaction=list_classifiers
-          'Development Status :: 4 - Beta',
           'Intended Audience :: Developers',
           'License :: OSI Approved :: Apache Software License',
           'Operating System :: Unix',
