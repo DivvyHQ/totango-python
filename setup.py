@@ -23,7 +23,7 @@ def version(filename):
 requires = ['requests']
 
 setup(name='totango-divvy',
-      version=version(os.path.join('totango', '__init__.py')),
+      version="0.3.5",
       description='Totango Python Library for DivvyHQ',
       long_description='%s\n%s' % (read('README.rst'), re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))),
       author='DivvyHQ',
