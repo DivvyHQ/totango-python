@@ -34,10 +34,10 @@ class Totango:
         if account_name is not None:
             payload['sdr_odn'] = account_name
 
-        for key, value in user_opts.iteritems():
+        for key, value in user_opts.items():
             payload["sdr_u.{0}".format(key)] = value
 
-        for key, value in account_opts.iteritems():
+        for key, value in account_opts.items():
             payload["sdr_o.{0}".format(key)] = value
 
         return payload
